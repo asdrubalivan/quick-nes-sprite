@@ -1,0 +1,210 @@
+# capybara.spr — fuente de verdad de los tiles PT1 del capybara
+# Generado/editado por tools/sprite_editor.py
+#
+# Colores: 0=transparente  1=outline(marron)  2=tan(cuerpo)  3=oscuro
+# Paleta NES: color_1=$16  color_2=$28  color_3=$07
+# Bit layout: char[0]=col_izq(bit7)  char[7]=col_der(bit0)
+#
+# Para editar:
+#   python3 tools/sprite_editor.py set-row --tile TC --row 2 --pixels 22222222
+#   python3 tools/sprite_editor.py set-pixel --tile TL --row 3 --col 2 --color 3
+#   python3 tools/sprite_editor.py build
+
+[TL:0]
+# index=$PT1:00  frame=0  top-left: orejas + cabeza + ojo
+00110110  # r0  plane0=0x36 plane1=0x00
+01221221  # r1  plane0=0x49 plane1=0x36
+12222222  # r2  plane0=0x80 plane1=0x7F
+12122222  # r3  plane0=0xA0 plane1=0x5F
+12222222  # r4  plane0=0x80 plane1=0x7F
+12222222  # r5  plane0=0x80 plane1=0x7F
+12222222  # r6  plane0=0x80 plane1=0x7F
+12222222  # r7  plane0=0x80 plane1=0x7F
+
+[TC:0]
+# index=$PT1:01  frame=0  top-center: cuerpo completo desde r2 — NO diagonal
+00000000  # r0  plane0=0x00 plane1=0x00
+00000000  # r1  plane0=0x00 plane1=0x00
+22222222  # r2  plane0=0x00 plane1=0xFF
+22222222  # r3  plane0=0x00 plane1=0xFF
+22222222  # r4  plane0=0x00 plane1=0xFF
+22222222  # r5  plane0=0x00 plane1=0xFF
+22222222  # r6  plane0=0x00 plane1=0xFF
+22222222  # r7  plane0=0x00 plane1=0xFF
+
+[TR:0]
+# index=$PT1:02  frame=0  top-right: outline c16 desde r2, resto transparente
+00000000  # r0  plane0=0x00 plane1=0x00
+00000000  # r1  plane0=0x00 plane1=0x00
+10000000  # r2  plane0=0x80 plane1=0x00
+10000000  # r3  plane0=0x80 plane1=0x00
+10000000  # r4  plane0=0x80 plane1=0x00
+10000000  # r5  plane0=0x80 plane1=0x00
+10000000  # r6  plane0=0x80 plane1=0x00
+10000000  # r7  plane0=0x80 plane1=0x00
+
+[ML:0]
+# index=$PT1:03  frame=0  mid-left: cuerpo + hocico
+12222222  # r0  plane0=0x80 plane1=0x7F
+12222222  # r1  plane0=0x80 plane1=0x7F
+12222222  # r2  plane0=0x80 plane1=0x7F
+12222222  # r3  plane0=0x80 plane1=0x7F
+12222222  # r4  plane0=0x80 plane1=0x7F
+11222222  # r5  plane0=0xC0 plane1=0x3F
+12122222  # r6  plane0=0xA0 plane1=0x5F
+01221000  # r7  plane0=0x48 plane1=0x30
+
+[MC:0]
+# index=$PT1:04  frame=0  mid-center: cuerpo taper
+22222222  # r0  plane0=0x00 plane1=0xFF
+22222222  # r1  plane0=0x00 plane1=0xFF
+22222222  # r2  plane0=0x00 plane1=0xFF
+22222222  # r3  plane0=0x00 plane1=0xFF
+22222222  # r4  plane0=0x00 plane1=0xFF
+22222210  # r5  plane0=0x02 plane1=0xFC
+22221000  # r6  plane0=0x08 plane1=0xF0
+00010000  # r7  plane0=0x10 plane1=0x00
+
+[MR:0]
+# index=$PT1:05  frame=0  mid-right: outline c16, r13+ transparente
+10000000  # r0  plane0=0x80 plane1=0x00
+10000000  # r1  plane0=0x80 plane1=0x00
+10000000  # r2  plane0=0x80 plane1=0x00
+10000000  # r3  plane0=0x80 plane1=0x00
+10000000  # r4  plane0=0x80 plane1=0x00
+00000000  # r5  plane0=0x00 plane1=0x00
+00000000  # r6  plane0=0x00 plane1=0x00
+00000000  # r7  plane0=0x00 plane1=0x00
+
+[BL:0]
+# index=$PT1:06  frame=0  bottom-left: nariz + patas delanteras f0
+00100000  # r0  plane0=0x20 plane1=0x00
+00012012  # r1  plane0=0x12 plane1=0x09
+00012012  # r2  plane0=0x12 plane1=0x09
+00011011  # r3  plane0=0x1B plane1=0x00
+00000000  # r4  plane0=0x00 plane1=0x00
+00000000  # r5  plane0=0x00 plane1=0x00
+00000000  # r6  plane0=0x00 plane1=0x00
+00000000  # r7  plane0=0x00 plane1=0x00
+
+[BC:0]
+# index=$PT1:07  frame=0  bottom-center: patas traseras f0
+00100000  # r0  plane0=0x20 plane1=0x00
+01201200  # r1  plane0=0x48 plane1=0x24
+01201200  # r2  plane0=0x48 plane1=0x24
+01101100  # r3  plane0=0x6C plane1=0x00
+00000000  # r4  plane0=0x00 plane1=0x00
+00000000  # r5  plane0=0x00 plane1=0x00
+00000000  # r6  plane0=0x00 plane1=0x00
+00000000  # r7  plane0=0x00 plane1=0x00
+
+[BR:0]
+# index=$PT1:08  frame=0  bottom-right: vacio
+00000000  # r0  plane0=0x00 plane1=0x00
+00000000  # r1  plane0=0x00 plane1=0x00
+00000000  # r2  plane0=0x00 plane1=0x00
+00000000  # r3  plane0=0x00 plane1=0x00
+00000000  # r4  plane0=0x00 plane1=0x00
+00000000  # r5  plane0=0x00 plane1=0x00
+00000000  # r6  plane0=0x00 plane1=0x00
+00000000  # r7  plane0=0x00 plane1=0x00
+
+[TL:1]
+# index=$PT1:09  frame=1  top-left f1 (idem f0)
+00110110  # r0  plane0=0x36 plane1=0x00
+01221221  # r1  plane0=0x49 plane1=0x36
+12222222  # r2  plane0=0x80 plane1=0x7F
+12122222  # r3  plane0=0xA0 plane1=0x5F
+12222222  # r4  plane0=0x80 plane1=0x7F
+12222222  # r5  plane0=0x80 plane1=0x7F
+12222222  # r6  plane0=0x80 plane1=0x7F
+12222222  # r7  plane0=0x80 plane1=0x7F
+
+[TC:1]
+# index=$PT1:0A  frame=1  top-center f1 (idem f0)
+00000000  # r0  plane0=0x00 plane1=0x00
+00000000  # r1  plane0=0x00 plane1=0x00
+22222222  # r2  plane0=0x00 plane1=0xFF
+22222222  # r3  plane0=0x00 plane1=0xFF
+22222222  # r4  plane0=0x00 plane1=0xFF
+22222222  # r5  plane0=0x00 plane1=0xFF
+22222222  # r6  plane0=0x00 plane1=0xFF
+22222222  # r7  plane0=0x00 plane1=0xFF
+
+[TR:1]
+# index=$PT1:0B  frame=1  top-right f1 (idem f0)
+00000000  # r0  plane0=0x00 plane1=0x00
+00000000  # r1  plane0=0x00 plane1=0x00
+10000000  # r2  plane0=0x80 plane1=0x00
+10000000  # r3  plane0=0x80 plane1=0x00
+10000000  # r4  plane0=0x80 plane1=0x00
+10000000  # r5  plane0=0x80 plane1=0x00
+10000000  # r6  plane0=0x80 plane1=0x00
+10000000  # r7  plane0=0x80 plane1=0x00
+
+[ML:1]
+# index=$PT1:0C  frame=1  mid-left f1 (idem f0)
+12222222  # r0  plane0=0x80 plane1=0x7F
+12222222  # r1  plane0=0x80 plane1=0x7F
+12222222  # r2  plane0=0x80 plane1=0x7F
+12222222  # r3  plane0=0x80 plane1=0x7F
+12222222  # r4  plane0=0x80 plane1=0x7F
+11222222  # r5  plane0=0xC0 plane1=0x3F
+12122222  # r6  plane0=0xA0 plane1=0x5F
+01221000  # r7  plane0=0x48 plane1=0x30
+
+[MC:1]
+# index=$PT1:0D  frame=1  mid-center f1 (idem f0)
+22222222  # r0  plane0=0x00 plane1=0xFF
+22222222  # r1  plane0=0x00 plane1=0xFF
+22222222  # r2  plane0=0x00 plane1=0xFF
+22222222  # r3  plane0=0x00 plane1=0xFF
+22222222  # r4  plane0=0x00 plane1=0xFF
+22222210  # r5  plane0=0x02 plane1=0xFC
+22221000  # r6  plane0=0x08 plane1=0xF0
+00010000  # r7  plane0=0x10 plane1=0x00
+
+[MR:1]
+# index=$PT1:0E  frame=1  mid-right f1 (idem f0)
+10000000  # r0  plane0=0x80 plane1=0x00
+10000000  # r1  plane0=0x80 plane1=0x00
+10000000  # r2  plane0=0x80 plane1=0x00
+10000000  # r3  plane0=0x80 plane1=0x00
+10000000  # r4  plane0=0x80 plane1=0x00
+00000000  # r5  plane0=0x00 plane1=0x00
+00000000  # r6  plane0=0x00 plane1=0x00
+00000000  # r7  plane0=0x00 plane1=0x00
+
+[BL:1]
+# index=$PT1:0F  frame=1  bottom-left f1: patas shift 1px derecha
+00100000  # r0  plane0=0x20 plane1=0x00
+00001212  # r1  plane0=0x0A plane1=0x05
+00001212  # r2  plane0=0x0A plane1=0x05
+00001111  # r3  plane0=0x0F plane1=0x00
+00000000  # r4  plane0=0x00 plane1=0x00
+00000000  # r5  plane0=0x00 plane1=0x00
+00000000  # r6  plane0=0x00 plane1=0x00
+00000000  # r7  plane0=0x00 plane1=0x00
+
+[BC:1]
+# index=$PT1:10  frame=1  bottom-center f1: patas traseras shift 1px
+00100000  # r0  plane0=0x20 plane1=0x00
+00120120  # r1  plane0=0x24 plane1=0x12
+00120120  # r2  plane0=0x24 plane1=0x12
+00110110  # r3  plane0=0x36 plane1=0x00
+00000000  # r4  plane0=0x00 plane1=0x00
+00000000  # r5  plane0=0x00 plane1=0x00
+00000000  # r6  plane0=0x00 plane1=0x00
+00000000  # r7  plane0=0x00 plane1=0x00
+
+[BR:1]
+# index=$PT1:11  frame=1  bottom-right f1: vacio
+00000000  # r0  plane0=0x00 plane1=0x00
+00000000  # r1  plane0=0x00 plane1=0x00
+00000000  # r2  plane0=0x00 plane1=0x00
+00000000  # r3  plane0=0x00 plane1=0x00
+00000000  # r4  plane0=0x00 plane1=0x00
+00000000  # r5  plane0=0x00 plane1=0x00
+00000000  # r6  plane0=0x00 plane1=0x00
+00000000  # r7  plane0=0x00 plane1=0x00
+
